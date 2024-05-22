@@ -85,7 +85,10 @@ a:focus {
 }
 
 /*header section*/
+
+
 .hero_area {
+
   position: relative;
   height: 100vh;
   display: -webkit-box;
@@ -98,13 +101,12 @@ a:focus {
      -moz-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(1, 1, 1, 0)), to(rgba(8, 19, 92, 0))), url(../images/slider-bg.jpg);
-  background-image: -webkit-linear-gradient(left, rgba(8, 19, 92, 0), rgba(8, 19, 92, 0)), url(../images/slider-bg.jpg);
-  background-image: -moz-linear-gradient(left, rgba(8, 19, 92, 0), rgba(8, 19, 92, 0)), url(../images/slider-bg.jpg);
-  background-image: -o-linear-gradient(left, rgba(8, 19, 92, 0), rgba(8, 19, 92, 0)), url(../images/slider-bg.jpg);
-  background-image: linear-gradient(to right, rgba(8, 19, 92, 0), rgba(8, 19, 92, 0)), url(../images/slider-bg.jpg);
-  background-size: cover;
+ background-image: url("/images/about-img.jpg");
+ 
+ background-size: cover;
+
 }
+
 
 .sub_page .hero_area {
   height: auto;
@@ -342,7 +344,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 span {
-  color: #08135c;
+  color: #ffffff;
 }
 
 .slider_section .find_container form .form-group {

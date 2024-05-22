@@ -30,6 +30,151 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #030d47; /* rgb(3, 13, 71) */
+    color: #fff;
+}
+
+#services {
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#services h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+.service h2 {
+    color: #ffffff;
+    font-size: 1.75em;
+    margin-bottom: 10px;
+}
+
+.service ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service ul li {
+    background: #2e2e5e; /* A lighter shade of violet */
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    color: #fff;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service ul li:hover {
+    background: #4b4b7b; /* A slightly lighter shade on hover */
+    transform: scale(1.05);
+}
+
+.service ul li i {
+    font-size: 2em;
+    color: #b8a1ff; /* Light violet color for icons */
+    margin-bottom: 10px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button button {
+    background-color: #b8a1ff; /* Light violet color */
+    color: #1c1c3c; /* Darker violet color for text */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button button:hover {
+    background-color: #d0c1ff; /* Lighter violet color on hover */
+    transform: scale(1.05);
+}
+#career-guidance-content {
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#career-guidance-content h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#career-guidance-content .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#career-guidance-content .box {
+    background: #2e2e5e; /* A lighter shade of violet */
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    color: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#career-guidance-content .box:hover {
+    background: #4b4b7b; /* A slightly lighter shade on hover */
+    transform: scale(1.05);
+}
+
+#career-guidance-content .box h2 {
+    color: #b8a1ff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#career-guidance-content .box p {
+    color: #ffffff;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    #career-guidance-content .content {
+        grid-template-columns: 1fr;
+    }
+  </style>
 
 </head>
 
@@ -73,16 +218,16 @@
     </header>
     <!-- end header section -->
     <!-- slider section -->
-    <section class="slider_section">
+    <section style="  background-color: rgba(0, 0, 0, 0.3);" class="slider_section">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 col-md-8 mx-auto">
             <div class="detail-box">
-              <h1 style="color: rgb(73, 73, 182);">
+              <h1 style="color: rgb(255, 255, 255); font-size: 50px; ">
                 Empower Your <br>
-                FUTURE CAREER
+                FUTURE CAREER!
               </h1>
-              <p  style="color: rgb(255, 255, 255);">
+              <p  style="color: rgb(255, 255, 255); text-align: center;  ">
                 At OpusNexus, we bridge the gap between talent and opportunity, providing personalized recruitment solutions and expert career guidance to help you achieve your full potential. Whether you are a job seeker or an employer, we are dedicated to fostering growth, development, and success.
               </p>
             </div>
@@ -94,84 +239,7 @@
     <!-- end slider section -->
   </div>
   <!-- category section -->
-  <section class="category_section">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6 col-md-4 col-xl-2 px-0">
-          <a href="#" class="box">
-            <div class="img-box">
-              <img src="images/c1.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Web Design
-              </h5>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4 col-xl-2 px-0">
-          <a href="#" class="box">
-            <div class="img-box">
-              <img src="images/c2.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Web Development
-              </h5>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4 col-xl-2 px-0">
-          <a href="#" class="box">
-            <div class="img-box">
-              <img src="images/c3.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Graphic Design
-              </h5>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4 col-xl-2 px-0">
-          <a href="#" class="box">
-            <div class="img-box">
-              <img src="images/c4.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Seo marketing
-              </h5>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4 col-xl-2 px-0">
-          <a href="#" class="box">
-            <div class="img-box">
-              <img src="images/c5.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Accounting
-              </h5>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-4 col-xl-2 px-0">
-          <a href="#" class="box">
-            <div class="img-box">
-              <img src="images/c6.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Content Writing
-              </h5>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  
   <!-- end category section -->
 
 
@@ -208,7 +276,7 @@
   <!-- end about section -->
 
   <!-- job section -->
-  <section class="job_section layout_padding">
+  <!-- <section class="job_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
@@ -376,12 +444,43 @@
       </div>
       
     </div>
-  </section>
+  </section> -->
   <!-- end job section -->
+  <section id="services">
+    <h1>Our Services</h1>
+    <div class="service" id="recruitment-solutions">
+        <h2 style="padding-top: 3%;">Recruitment Solutions</h2>
+        <ul>
+            <li><i class="fas fa-user-tie"></i>Permanent Recruitment</li>
+            <li><i class="fas fa-search"></i>Temporary & Contract Staffing</li>
+            <li><i class="fas fa-users"></i>Executive Search</li>
+            <li><i class="fas fa-industry"></i>Industry Specialization</li>
+            <li><i class="fas fa-tasks"></i>Recruitment Process Outsourcing (RPO)</li>
+        </ul>
+    </div>
+    <div class="service" id="career-guidance">
+        <h2>Career Guidance and Development</h2>
+        <ul>
+            <li><i class="fas fa-chalkboard-teacher"></i> Personalized Counseling</li>
+            <li><i class="fas fa-tools"></i> Skills Assessment and Development</li>
+            <li><i class="fas fa-file-alt"></i> Professional Development Workshops</li>
+        </ul>
+    </div>
+    <div class="service" id="mentorship-programs">
+        <h2>Mentorship Programs</h2>
+        <ul>
+            <li><i class="fas fa-user-friends"></i> Industry Mentorship</li>
+            <li><i class="fas fa-users-cog"></i>Peer-to-Peer Mentorship</li>
+        </ul>
+    </div>
+    <div class="button">
+      <button>More services</button>
+  </div>
+</section>
 
   <!-- expert section -->
 
-  <section class="expert_section layout_padding">
+  <!-- <section class="expert_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
@@ -489,23 +588,74 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!--  -->
-
-
-  <section style="background-color: #f4f4f4; padding: 40px 0; text-align: center;">
-    <div style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-      <blockquote style="font-size: 24px; font-style: italic; color: #333; line-height: 1.6; margin-bottom: 20px;">
-        "At OpusNexus, we believe that the right opportunity can change a life. Our mission is to bridge the gap between talent and success, guiding individuals and organizations to achieve their full potential."
-      </blockquote>
-      <cite style="display: block; font-size: 18px; color: #666; margin-top: 10px;">
-        - OpusNexus Consulting Team
-      </cite>
+  <section id="career-guidance-content">
+    <h1>Career Guidance and Development</h1>
+    <div class="content">
+        <div class="box">
+            <h2>Student-Centered Approach</h2>
+            <p>We prioritize the needs and aspirations of students, offering personalized support and guidance tailored to their individual career goals.</p>
+        </div>
+        <div class="box">
+            <h2>Industry Expertise</h2>
+            <p>Our team consists of professionals with extensive experience in recruitment, career development, and higher education, ensuring students receive expert advice and mentorship.</p>
+        </div>
+        <div class="box">
+            <h2>Diverse Network</h2>
+            <p>We have established connections with a diverse range of employers across various industries, providing students with access to a wide array of internship and job opportunities.</p>
+        </div>
+        <div class="box">
+            <h2>Commitment to Success</h2>
+            <p>We are dedicated to empowering students to achieve their full potential and succeed in their chosen career paths, guiding them every step of the way with personalized support and resources.</p>
+        </div>
     </div>
-  </section>
-  
-  
+</section>
+<!-- <section id="services">
+    <h1>Our Services</h1>
+    <div class="service" id="recruitment-solutions">
+        <h2>Recruitment Solutions</h2>
+        <ul>
+            <li><i class="fas fa-user-tie"></i>Permanent Recruitment</li>
+            <li><i class="fas fa-search"></i>Temporary & Contract Staffing</li>
+            <li><i class="fas fa-users"></i>Executive Search</li>
+            <li><i class="fas fa-industry"></i>Industry Specialization</li>
+            <li><i class="fas fa-tasks"></i>Recruitment Process Outsourcing (RPO)</li>
+        </ul>
+    </div>
+    <div class="service" id="career-guidance">
+        <h2>Career Guidance and Development</h2>
+        <ul>
+            <li><i class="fas fa-chalkboard-teacher"></i> Personalized Counseling</li>
+            <li><i class="fas fa-tools"></i> Skills Assessment and Development</li>
+            <li><i class="fas fa-file-alt"></i> Professional Development Workshops</li>
+        </ul>
+    </div>
+    <div class="service" id="mentorship-programs">
+        <h2>Mentorship Programs</h2>
+        <ul>
+            <li><i class="fas fa-user-friends"></i> Industry Mentorship</li>
+            <li><i class="fas fa-users-cog"></i>Peer-to-Peer Mentorship</li>
+        </ul>
+    </div>
+    <div class="button">
+        <button>More services</button>
+    </div>
+</section> -->
+
+<section style="margin: 30px; padding-top: 3%; padding-bottom: 3%; background-color: #030d47; color: #ffffff;">
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #1c1c3c; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <blockquote style="font-size: 24px; font-style: italic; color: #ffffff; line-height: 1.6; border-left: 5px solid #b8a1ff; padding-left: 20px; margin-bottom: 20px;">
+            "At OpusNexus, we believe that the right opportunity can change a life. Our mission is to bridge the gap between talent and success, guiding individuals and organizations to achieve their full potential."
+        </blockquote>
+        <cite style="display: block; font-size: 18px; color: #b8a1ff; margin-top: 10px;">
+            - OpusNexus Consulting Team
+        </cite>
+    </div>
+</section>
+
+   
 
   <!-- end expert section -->
 
@@ -579,17 +729,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="info_form">
-            <h4>
-              Newsletter
-            </h4>
-            <form action="">
-              <input type="text" placeholder="Enter Your Email" />
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
-          </div>
+         <img src="" alt="OpusNexus">
         </div>
       </div>
     </div>
@@ -609,6 +749,8 @@
   <!-- footer section -->
 
   <!-- jQery -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
