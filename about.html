@@ -37,6 +37,73 @@
     padding: 0;
     background-color: #030d47; /* rgb(3, 13, 71) */
     color: #fff;
+
+    .about_section {
+  padding: 40px 0;
+}
+
+.detail-box {
+  padding: 20px;
+  background-color: #030d477e; /* rgb(3, 13, 71) */
+  box-shadow: 0 px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.heading_container h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.detail-box p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.detail-box h3, .detail-box h4 {
+  font-size: 22px;
+  margin-top: 20px;
+  color: #007bff;
+}
+
+.detail-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.detail-box ul li {
+  font-size: 16px;
+  color: #fff;
+  padding-left: 20px;
+  position: relative;
+  text-align: justify;
+}
+
+.detail-box ul li:before {
+  content: '\f00c'; /* FontAwesome check icon */
+  font-family: FontAwesome;
+  color: #007bff;
+  position: absolute;
+  left: 0;
+}
+
+.call_us_btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.call_us_btn:hover {
+  background-color: #0056b3;
+}
+
+
 }
 
   </style>
@@ -62,17 +129,17 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ml-auto">
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item  active">
                 <a class="nav-link" href="about.html"> About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="job.html">services</a>
+                <a class="nav-link" href="service.html.html">services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="freelancer.html">contact</a>
+                <a class="nav-link" href="contact.html">contact</a>
               </li>
             
                
@@ -89,29 +156,64 @@
   <section class="about_section layout_padding">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
+        
+           
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-             OPUSNEXUS
+                OPUSNEXUS
               </h2>
             </div>
+            <div class="img-box">
+              <iframe src="https://lottie.host/embed/6e073ddb-a9dd-489c-8c4c-210986ac93c7/ECvx0vpnP7.json" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+        </div>
             <p style="text-align: justify;">
               OpusNexus Consulting is dedicated to empowering individuals and organizations to achieve their full potential. We specialize in connecting talented individuals with rewarding career opportunities and offering comprehensive guidance to navigate the evolving job market. Our expert team is committed to fostering growth, development, and success.
             </p>
-            <a href="tel:8123007500">
+            <h3>Our Mission</h3>
+            <p style="text-align: justify;">
+              At OpusNexus, our mission is to bridge the gap between talent and opportunity by providing personalized recruitment solutions and expert career guidance. We are committed to fostering growth, development, and success for both individuals and businesses.
+            </p>
+            <h3>Vision Statement</h3>
+            <p style="text-align: justify;">
+              At OpusNexus, our vision is to redefine recruitment, setting new standards in connecting talent with opportunity. We aim to be the trusted partner for candidates and clients alike, transforming the recruitment journey into a seamless experience of discovery and achievement. Our vision is to shape a world where talent thrives and organizations flourish.
+            </p>
+            <h3>Why Choose OpusNexus</h3>
+            <br>
+            <h5>For Recruitment Solutions</h5>
+            <ul>
+              <li><span style="font-weight: bold;">Experienced Team:</span> Our team of recruitment experts has years of industry experience and a proven track record of success.</li>
+              <li><span style="font-weight: bold;">Customized Solutions:</span>  We understand that every business is unique, and we offer personalized recruitment solutions to meet specific needs.</li>
+              <li><span style="font-weight: bold;">Quality over Quantity:</span> We focus on quality rather than quantity, ensuring that each candidate we present is thoroughly screened and meets our clients' criteria.</li>
+              <li><span style="font-weight: bold;">Confidentiality:</span> We maintain strict confidentiality throughout the recruitment process to protect our clients' interests.</li>
+              <li><span style="font-weight: bold;">Client Centric Approach:</span> We prioritize client satisfaction and strive to exceed expectations by delivering timely and efficient recruitment services.</li>
+            </ul>
+            <h5>For Career Guidance and Development
+            </h5>
+            <ul>
+              <li><span style="font-weight: bold;"> Student-Centered Approach:</span> We prioritize the needs and aspirations of students, offering personalized support and guidance tailored to their individual career goals.
+              </li>
+              <li> <span style="font-weight: bold;"> Industry Expertise:</span> Our team consists of professionals with extensive experience in recruitment, career development, and higher education, ensuring students receive expert advice and mentorship.
+              </li>
+              <li> <span style="font-weight: bold;">Diverse Network:</span>  We have established connections with a diverse range of employers across various industries, providing students with access to a wide array of internship and job opportunities.
+              </li>
+              <li> <span style="font-weight: bold;">Commitment to Success:</span> We maintain strict confidentiality throughout the recruitment process to protect our clients' interests.</li>
+              <li> <span style="font-weight: bold;"> </span>We are dedicated to empowering students to achieve their full potential and succeed in their chosen career paths, guiding them every step of the way with personalized support and resources.
+              </li>
+            </ul>
+            
+            <a href="tel:8123007500" class="call_us_btn">
               Call us
             </a>
           </div>
-          
         </div>
-        <div class="col-md-6">
-          <div class="img-box">
-            <iframe src="https://lottie.host/embed/6e073ddb-a9dd-489c-8c4c-210986ac93c7/ECvx0vpnP7.json"  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+     
         </div>
       </div>
     </div>
   </section>
+  
 
   <!-- end about section -->
 
@@ -124,7 +226,7 @@
             Menu
           </h4>
           <ul>
-            <li>
+            <li >
               <a href="index.html">
                 Home
               </a>
@@ -135,67 +237,63 @@
               </a>
             </li>
             <li>
-              <a href="job.html">
-                Jobs
+              <a class="" href="service.html">
+               Services
               </a>
             </li>
             <li>
-              <a href="freelancer.html">
-                Freelancers
-              </a>
+              <a class="" href="Contact.html">
+                    Contact Us             
+               </a>
             </li>
           </ul>
         </div>
         <div class="col-md-3">
           <h4>
-            Jobs
-          </h4>
-          <p>
-            Established fact that a reader will be distracted by the readable content of a page when looking at its
-            layout. The point of using Lorem Ipsum
+            OpusNexus          </h4>
+          <p style="text-align: justify;">
+            OpusNexus is a leading recruitment and career guidance firm, connecting talented individuals with rewarding opportunities. Our expert team and innovative technology empower both individuals and organizations to reach their full potential in today's dynamic job market.
+
           </p>
         </div>
         <div class="col-md-3">
           <div class="info_social">
             <h4>
               Social Link
+              
             </h4>
+            
+          
+            
             <div class="social_container">
               <div>
                 <a href="">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <i class="fa-brands fa-facebook"></i>                </a>
+              </div>
+              <div>
+                <a href="">
+                  <i class="fa-brands fa-linkedin"></i>                </a>
+              </div>
+              <div>
+                <a href="">
+                  <i class="fa-brands fa-square-instagram"></i>                  
+
                 </a>
               </div>
               <div>
                 <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+
                 </a>
               </div>
-              <div>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-              </div>
+            
+            
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="info_form">
-            <h4>
-              Newsletter
-            </h4>
-            <form action="">
-              <input type="text" placeholder="Enter Your Email" />
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
-          </div>
+        <div class="col-md-3">
+          <img width="200px" src="images/Untitled (500 x 200 px).png" alt="">
+        <div>
         </div>
       </div>
     </div>
@@ -208,7 +306,7 @@
     <div class="container">
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        <a href="https://html.design/">OpusNexus</a>
       </p>
     </div>
   </footer>
@@ -222,6 +320,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </body>
 

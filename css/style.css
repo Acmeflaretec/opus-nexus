@@ -89,7 +89,7 @@ a:focus {
 
 .hero_area {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -102,8 +102,21 @@ a:focus {
           flex-direction: column;
  background-image: url("/images/photo-1521791136064-7986c2920216.avif");
  background-size: cover;
+     background-position: center;
+
 
 }
+@media (max-width: 768px) {
+  .hero_area {
+    background-image: url("/images/photo-1507679799987-c73779587ccf.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust this as needed */
+  }
+}
+
+  
 .about_hero_area {
   position: relative;
 
@@ -1003,7 +1016,7 @@ a:focus {
   position: absolute;
   width: 8px;
   height: 8px;
-  background-color: #ffffff;
+  background-color: #000000;
   -webkit-transform: translateY(-50%);
      -moz-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
