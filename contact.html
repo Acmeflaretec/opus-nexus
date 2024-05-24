@@ -31,19 +31,89 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+ <style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #030d47; /* rgb(3, 13, 71) */
+    color: #ffffff; /* Ensure text is readable on dark background */
+}
 
+.contact-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+    color: #333; /* Text color for contact-container */
+}
+
+.contact-container h1 {
+    color: #ffffff; /* Text color for h1 */
+}
+
+.contact-info {
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.info-item {
+  background: #2e2e5e; /* A lighter shade of violet */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 100%;
+}
+
+.info-item:hover {
+    transform: translateY(-10px);
+}
+
+.info-item h2 {
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.map-container {
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+
+
+
+ </style>
 </head>
 
 <body class="sub_page">
 
-  <div class="hero_area">
+  <div class="about_hero_area">
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Hirevac
+            <img width="200px" src="images/Untitled (500 x 200 px).png" alt="">
             </span>
           </a>
 
@@ -53,39 +123,20 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ml-auto">
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item  ">
                 <a class="nav-link" href="about.html"> About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="job.html">Jobs</a>
+                <a class="nav-link" href="service.html">services</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="freelancer.html">Freelancers</a>
+                <a class="nav-link" href="contact.html">contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  <span>
-                    Login
-                  </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  <span>
-                    Sign Up
-                  </span>
-                </a>
-              </li>
-              <form class="form-inline">
-                <button class="btn   nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form>
+            
+               
             </ul>
           </div>
         </nav>
@@ -93,224 +144,132 @@
     </header>
     <!-- end header section -->
   </div>
-
   <!-- expert section -->
 
-  <section class="expert_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          LOOKING FOR EXPERTS?
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam nulla mauris
-          iaculis. Erat eget vitae malesuada, tortor tincidunt porta lorem lectus.
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/e1.jpg" alt="">
+  <div class="contact-container container">
+    <h1 class="text-center my-4">Contact Us</h1>
+    <div class="row contact-info">
+        <div class="col-12 col-md-4 mb-4 d-flex">
+            <div class="info-item mx-auto">
+                <h2>Address</h2>
+                <p>1234 Premium St, Luxury City, Country</p>
             </div>
-            <div class="detail-box">
-              <a href="">
-                Martin Anderson
-              </a>
-              <h6 class="expert_position">
-                <span>
-                  Web Anaylzer
-                </span>
-                <span>
-                  41 Jobs Done
-                </span>
-              </h6>
-              <span class="expert_rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </span>
-              <p>
-                Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam
-                nulla
-                mauris iaculis.
-              </p>
-            </div>
-          </div>
         </div>
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/e2.jpg" alt="">
+        <div class="col-12 col-md-4 mb-4 d-flex">
+            <div class="info-item mx-auto">
+                <h2>Phone</h2>
+                <p>(123) 456-7890</p>
             </div>
-            <div class="detail-box">
-              <a href="">
-                Semanta Klores
-              </a>
-              <h6 class="expert_position">
-                <span>
-                  Graphic Designer
-                </span>
-                <span>
-                  32 Jobs Done
-                </span>
-              </h6>
-              <span class="expert_rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </span>
-              <p>
-                Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam
-                nulla
-                mauris iaculis.
-              </p>
-            </div>
-          </div>
         </div>
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/e3.jpg" alt="">
+        <div class="col-12 col-md-4 mb-4 d-flex">
+            <div class="info-item mx-auto">
+                <h2>Email</h2>
+                <p>contact@premiumsite.com</p>
             </div>
-            <div class="detail-box">
-              <a href="">
-                Ryan Martines
-              </a>
-              <h6 class="expert_position">
-                <span>
-                  SEO Expert
-                </span>
-                <span>
-                  27 Jobs Done
-                </span>
-              </h6>
-              <span class="expert_rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </span>
-              <p>
-                Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam
-                nulla
-                mauris iaculis.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          View All Freelancers
-        </a>
-      </div>
     </div>
-  </section>
+    <div class="map-container text-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093747!2d144.9537353153186!3d-37.8162797797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577aef5e3c1f6b0!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1597747691769!5m2!1sen!2sau" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</div>
+
 
   <!-- end expert section -->
 
   <!-- info section -->
-  <section class="info_section ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2 info_links">
+ <!-- info section -->
+ <section class="info_section ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 info_links">
+        <h4>
+          Menu
+        </h4>
+        <ul>
+          <li >
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+          <li >
+            <a href="about.html">
+              About
+            </a>
+          </li>
+          <li>
+            <a class="" href="service.html">
+             Services
+            </a>
+          </li>
+          <li class="active">
+            <a class="" href="Contact.html">
+                  Contact Us             
+             </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>
+          OpusNexus          </h4>
+        <p style="text-align: justify;">
+          OpusNexus is a leading recruitment and career guidance firm, connecting talented individuals with rewarding opportunities. Our expert team and innovative technology empower both individuals and organizations to reach their full potential in today's dynamic job market.
+
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="info_social">
           <h4>
-            Menu
+            Social Link
+            
           </h4>
-          <ul>
-            <li>
-              <a href="index.html">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="about.html">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="job.html">
-                Jobs
-              </a>
-            </li>
-            <li>
-              <a class="active" href="freelancer.html">
-                Freelancers
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h4>
-            Jobs
-          </h4>
-          <p>
-            Established fact that a reader will be distracted by the readable content of a page when looking at its
-            layout. The point of using Lorem Ipsum
-          </p>
-        </div>
-        <div class="col-md-3">
-          <div class="info_social">
-            <h4>
-              Social Link
-            </h4>
-            <div class="social_container">
-              <div>
-                <a href="">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-              </div>
+          
+        
+          
+          <div class="social_container">
+            <div>
+              <a href="">
+                <i class="fa-brands fa-facebook"></i>                </a>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="info_form">
-            <h4>
-              Newsletter
-            </h4>
-            <form action="">
-              <input type="text" placeholder="Enter Your Email" />
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
+            <div>
+              <a href="">
+                <i class="fa-brands fa-linkedin"></i>                </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fa-brands fa-square-instagram"></i>                  
+
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fa-brands fa-whatsapp"></i>
+
+              </a>
+            </div>
+          
+          
           </div>
         </div>
       </div>
+      <div class="col-md-3">
+        <img width="200px" src="images/Untitled (500 x 200 px).png" alt="">
+      <div>
+      </div>
     </div>
-  </section>
-  <!-- end info_section -->
+  </div>
+</section>
+<!-- end info_section -->
 
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </div>
-  </footer>
+
+<!-- footer section -->
+<footer class="footer_section">
+  <div class="container">
+    <p>
+      &copy; <span id="displayYear"></span> All Rights Reserved By
+      <a href="https://html.design/">OpusNexus</a>
+    </p>
+  </div>
+</footer>
   <!-- footer section -->
 
   <!-- jQery -->
@@ -320,6 +279,8 @@
   <!-- nice select -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
   <!-- custom js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <script src="js/custom.js"></script>
 
 
