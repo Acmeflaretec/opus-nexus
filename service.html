@@ -1,294 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <!-- Basic -->
+  <!-- Basic Meta Tags -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
   <title>OPUSNEXUS</title>
   <link rel="icon" type="image/x-icon" href="images/Untitled (500 x 200 px).png">
 
-
-  <!-- bootstrap core css -->
+  <!-- CSS Links -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
-
-  <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <!-- nice select -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
-
-  <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  
+  <!-- Inline CSS for Services Section -->
   <style>
-         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #030d47; /* rgb(3, 13, 71) */
-    color: #fff;
-}
-
-#services {
-    max-width: 100%;
-    padding: 20px;
-    color: #fff;
-    border-radius: 10px;
-    
-}
-
-#services h1 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.service {
-    margin-bottom: 40px;
-}
-
-.service h2 {
-    color: #ffffff;
-    font-size: 1.75em;
-    margin-bottom: 10px;
-}
-
-.service ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.service ul li {
-    background: #2e2e5e; /* A lighter shade of violet */
-    padding: 20px;
-    border: 1px solid #444;
-    border-radius: 10px;
-    color: #fff;
-    flex: 1 1 calc(25% - 20px);
-    box-sizing: border-box;
-    text-align: center;
-    transition: background 0.3s ease, transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.service ul li:hover {
-    background: #4b4b7b; /* A slightly lighter shade on hover */
-    transform: scale(1.05);
-}
-
-.service ul li i {
-    font-size: 2em;
-    color: #b8a1ff; /* Light violet color for icons */
-    margin-bottom: 10px;
-}
-
-.detailed-service ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.detailed-service ul li {
-    background: #2e2e5e; /* A lighter shade of violet */
-    padding: 15px;
-    border: 1px solid #444;
-    border-radius: 10px;
-    color: #fff;
-    text-align: left;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.detailed-service ul li:hover {
-    background: #4b4b7b; /* A slightly lighter shade on hover */
-    transform: scale(1.02);
-}
-
-.button {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.button button {
-    background-color: #b8a1ff; /* Light violet color */
-    color: #1c1c3c; /* Darker violet color for text */
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.button button:hover {
-    background-color: #d0c1ff; /* Lighter violet color on hover */
-    transform: scale(1.05);
-}
-@media (max-width: 768px) {
-    #career-guidance-content .content {
-        grid-template-columns: 1fr;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #030d47;
+      color: #fff;
     }
-  }
-    
-@media (min-width: 800px) {
-#services{
-        margin: 70px;
-    
+
+    #services {
+      max-width: 100%;
+      padding: 20px;
+      color: #fff;
+      border-radius: 10px;
     }
-  }
 
-  .loading-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #000;
-            z-index: 9999;
-        }
+    #services h1 {
+      text-align: center;
+      color: #ffffff;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
 
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 6px solid #f3f3f3;
-            border-top: 6px solid #3498db;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
+    .service {
+      background: #2e2e5e;
+      padding: 20px;
+      border: 1px solid #444;
+      border-radius: 10px;
+      color: #fff;
+      margin: 10px;
+      text-align: center;
+      transition: background 0.3s ease, transform 0.3s ease;
+      flex: 1 1 calc(33.333% - 40px); /* 3 boxes per row with some margin */
+      box-sizing: border-box;
+      max-width: calc(33.333% - 40px);
+    }
+
+    .service:hover {
+      background: #4b4b7b;
+      transform: scale(1.05);
+    }
+
+    .service i {
+      font-size: 2em;
+      color: #b8a1ff;
+      margin-bottom: 10px;
+    }
+
+    .service h2 {
+      color: #ffffff;
+      font-size: 1.75em;
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      text-align: center;
+    }
+
+    .section-heading {
+      width: 100%;
+      text-align: left;
+      padding-left: 40px;
+      font-size: 2em;
+      color: #ffffff;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 1200px) {
+      .service {
+        flex: 1 1 calc(50% - 40px); /* 2 boxes per row on medium screens */
+        max-width: calc(50% - 40px);
+      }
+    }
+
+    @media (max-width: 800px) {
+      .service {
+        flex: 1 1 calc(100% - 40px); /* 1 box per row on small screens */
+        max-width: calc(100% - 40px);
+      }
+    }
+
+    .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #000;
+      z-index: 9999;
+    }
+
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #3498db;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
   </style>
-
 </head>
 
-<body>
-  <body class="sub_page">
-    <div class="loading-screen">
-      <div class="spinner"></div>
+<body class="sub_page">
+  <div class="loading-screen">
+    <div class="spinner"></div>
   </div>
-  <div class="about_hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <span>
-            <img width="200px" src="images/Untitled (500 x 200 px).png" alt="">
-            </span>
-          </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
+  <!-- Header Section -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <span>
+            <img width="270px" src="images/Untitled (500 x 200 px).png" alt="">
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html"> About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item  active">
-                <a class="nav-link" href="about.html"> About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html.html">services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">contact</a>
-              </li>
-            
-               
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-  </div>
-  <section  id="services">
+  <!-- Services Section -->
+  <section id="services">
     <h1>Our Services</h1>
-    <div class="service" id="recruitment-solutions">
-        <h2 style="padding-top: 3%;">Recruitment Solutions</h2>
-        <ul>
-            <li><i class="fas fa-user-tie"></i>Permanent Recruitment</li>
-            <li><i class="fas fa-search"></i>Temporary & Contract Staffing</li>
-            <li><i class="fas fa-users"></i>Executive Search</li>
-            <li><i class="fas fa-industry"></i>Industry Specialization</li>
-            <li><i class="fas fa-tasks"></i>Recruitment Process Outsourcing (RPO)</li>
-        </ul>
-        <div class="detailed-service">
-            <ul>
-                <li  ><strong>Permanent Recruitment</strong> Helping businesses find the right talent for permanent positions across various industries and job roles.</li>
-                <li><strong>Temporary & Contract Staffing</strong> Providing flexible staffing solutions to meet short-term and project-based staffing requirements.</li>
-                <li><strong>Executive Search</strong> Specialized recruitment services for senior-level and executive positions to ensure leadership excellence.</li>
-                <li><strong>Recruitment Process Outsourcing (RPO)</strong> Managing end-to-end recruitment processes on behalf of our clients to streamline hiring and reduce costs.</li>
-                <li><strong>Industry Specialization</strong> Expertise in recruiting for specific industries such as Cyber Security, Healthcare, Engineering, Finance, and beyond.</li>
-            </ul>
-        </div>
+    
+    <div class="section-heading">Recruitment Solutions</div>
+    <div class="services-container">
+      <div class="service" id="recruitment-solutions">
+        <i class="fas fa-user-tie"></i>
+        <h2>Permanent Recruitment</h2>
+        <p>Helping businesses find the right talent for permanent positions across various industries and job roles.</p>
+      </div>
+      <div class="service" id="temporary-contract-staffing">
+        <i class="fas fa-search"></i>
+        <h2>Temporary & Contract Staffing</h2>
+        <p>Providing flexible staffing solutions to meet short-term and project-based staffing requirements.</p>
+      </div>
+      <div class="service" id="executive-search">
+        <i class="fas fa-users"></i>
+        <h2>Executive Search</h2>
+        <p>Specialized recruitment services for senior-level and executive positions to ensure leadership excellence.</p>
+      </div>
+      <div class="service" id="industry-specialization">
+        <i class="fas fa-industry"></i>
+        <h2>Industry Specialization</h2>
+        <p>Expertise in recruiting for specific industries such as Cyber Security, Healthcare, Engineering, Finance, and beyond.</p>
+      </div>
+      <div class="service" id="rpo">
+        <i class="fas fa-tasks"></i>
+        <h2>Recruitment Process Outsourcing (RPO)</h2>
+        <p>Managing end-to-end recruitment processes on behalf of our clients to streamline hiring and reduce costs.</p>
+      </div>
     </div>
-    <div class="service" id="career-guidance">
-        <h2>Career Guidance and Development</h2>
-        <ul>
-            <li><i class="fas fa-chalkboard-teacher"></i> Personalized Counseling</li>
-            <li><i class="fas fa-tools"></i> Skills Assessment and Development</li>
-            <li><i class="fas fa-file-alt"></i> Professional Development Workshops</li>
-        </ul>
-        <div class="detailed-service">
-            <ul>
-                <li><strong>Personalized Counseling</strong> Our experienced career advisors offer one-on-one counseling sessions, helping students assess their strengths, interests, and goals to make informed career decisions.</li>
-                <li><strong>Skills Assessment and Development</strong> Through comprehensive assessments and targeted skill-building exercises, we empower students to enhance their capabilities and develop key competencies essential for success in their chosen fields.</li>
-                <li><strong>Professional Development Workshops</strong> We conduct workshops and seminars covering a wide range of topics, including resume writing, interview preparation, networking strategies, and personal branding, equipping students with essential tools for career advancement.</li>
-            </ul>
-        </div>
+
+    <div class="section-heading">Career Guidance and Development</div>
+    <div class="services-container">
+      <div class="service" id="personalized-counseling">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h2>Personalized Counseling</h2>
+        <p>Our experienced career advisors offer one-on-one counseling sessions, helping students assess their strengths, interests, and goals to make informed career decisions.</p>
+      </div>
+      <div class="service" id="skills-assessment">
+        <i class="fas fa-tools"></i>
+        <h2>Skills Assessment and Development</h2>
+        <p>Through comprehensive assessments and targeted skill-building exercises, we empower students to enhance their capabilities and develop key competencies essential for success in their chosen fields.</p>
+      </div>
+      <div class="service" id="workshops">
+        <i class="fas fa-file-alt"></i>
+        <h2>Professional Development Workshops</h2>
+        <p>We conduct workshops and seminars covering a wide range of topics, including resume writing, interview preparation, networking strategies, and personal branding, equipping students with essential tools for career advancement.</p>
+      </div>
     </div>
-    <div class="service" id="mentorship-programs">
+
+    <div class="section-heading">Mentorship Programs</div>
+    <div class="services-container">
+      <div class="service" id="mentorship">
+        <i class="fas fa-comments"></i>
         <h2>Mentorship Programs</h2>
-        <ul>
-            <li><i class="fas fa-user-friends"></i> Industry Mentorship</li>
-            <li><i class="fas fa-users-cog"></i>Peer-to-Peer Mentorship</li>
-        </ul>
-        <div class="detailed-service">
-            <ul>
-                <li><strong>Industry Mentorship</strong> Our mentorship programs pair students with seasoned professionals in their desired fields, providing invaluable guidance, advice, and industry insights to support their career development journey.</li>
-                <li><strong>Peer-to-Peer Mentorship</strong> We facilitate peer mentorship initiatives, enabling students to connect with their peers and share experiences, challenges, and best practices in a supportive and collaborative environment.</li>
-            </ul>
-        </div>
+        <p>Connecting students with industry professionals who provide guidance, support, and valuable insights, helping them navigate their career paths and achieve their goals.</p>
+      </div>
+      <div class="service" id="peer-networking">
+        <i class="fas fa-users"></i>
+        <h2>Peer Networking</h2>
+        <p>Offering opportunities for students to connect with peers who have similar interests and career goals, fostering a supportive and collaborative environment for mutual growth and learning.</p>
+      </div>
+      <div class="service" id="internships">
+        <i class="fas fa-briefcase"></i>
+        <h2>Internship and Job Placement Assistance</h2>
+        <p>Leveraging our extensive network of industry connections, we assist students in securing internships and job placements that align with their career aspirations, providing valuable hands-on experience and opportunities for professional growth.</p>
+      </div>
+      <div class="service" id="resources">
+        <i class="fas fa-book"></i>
+        <h2>Resources and Tools</h2>
+        <p>We provide access to a wealth of resources and tools, including online career assessments, industry-specific guides, and job search platforms, empowering students to explore career options and stay updated with the latest trends and opportunities in their chosen fields.</p>
+      </div>
     </div>
+  </section>
 
-
-  <!-- job section -->
- 
-  <!-- end job section -->
-
-  <!-- info section -->
+  <!-- Info Section -->
   <section class="info_section ">
     <div class="container">
       <div class="row">
-        <div class="col-md-2 info_links">
+        <div class="col-md-3
+        . info_links">
           <h4>
             Menu
           </h4>
@@ -298,12 +263,12 @@
                 Home
               </a>
             </li>
-            <li class="">
+            <li class="active">
               <a href="about.html">
-                About
+                About Us
               </a>
             </li>
-            <li class="active">
+            <li>
               <a class="" href="service.html">
                Services
               </a>
@@ -317,10 +282,10 @@
         </div>
         <div class="col-md-3">
           <h4>
-            OpusNexus          </h4>
+            OpusNexus
+          </h4>
           <p style="text-align: justify;">
             OpusNexus is a leading recruitment and career guidance firm, connecting talented individuals with rewarding opportunities. Our expert team and innovative technology empower both individuals and organizations to reach their full potential in today's dynamic job market.
-
           </p>
         </div>
         <div class="col-md-3">
@@ -354,7 +319,7 @@
                 </a>
               </div>
             
-            
+
             </div>
           </div>
         </div>
@@ -377,29 +342,24 @@
       </p>
     </div>
   </footer>
-  <!-- footer section -->
+
+  <!-- Scripts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script>
-
     window.addEventListener('load', () => {
-        const loadingScreen = document.querySelector('.loading-screen');
-        loadingScreen.style.opacity = '0';
-        loadingScreen.style.transition = 'opacity 0.5s ease';
+      const loadingScreen = document.querySelector('.loading-screen');
+      loadingScreen.style.opacity = '0';
+      loadingScreen.style.transition = 'opacity 0.5s ease';
 
-        setTimeout(() => {
-            loadingScreen.style.display = 'none';
-        }, 500);
+      setTimeout(() => {
+        loadingScreen.style.display = 'none';
+      }, 500);
     });
-</script>
-  <!-- jQery -->
+  </script>
   <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
-  <!-- nice select -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
-  <!-- custom js -->
   <script src="js/custom.js"></script>
-
 </body>
 
-</html>     
+</html>
