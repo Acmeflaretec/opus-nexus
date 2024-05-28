@@ -58,12 +58,18 @@
 
 .info-item {
   background: #2e2e5e; /* A lighter shade of violet */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    transition: transform 0.3s;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for better aesthetics */
     width: 100%;
+    transition: transform 0.3s;
+  
+
 }
 
 .info-item:hover {
@@ -78,6 +84,9 @@
 .info-item p {
     color: #fff;
     font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .map-container {
@@ -162,7 +171,7 @@
                 <a class="nav-link" href="service.html">services</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="contact.html">contact</a>
+                <a class="nav-link" href="contact.html">contact Us</a>
               </li>
             
                
@@ -181,10 +190,11 @@
         <div class="col-12 col-md-4 mb-4 d-flex">
             <div class="info-item mx-auto">
                 <h2>Address</h2>
-                <p>Banglore, India</p>
+                <p >97, 1st Main, varadarajaswami Layout, Singapura, Vidyaranyapura, Bangalore-560097</p>
             </div>
         </div>
         <div class="col-12 col-md-4 mb-4 d-flex">
+
             <div class="info-item mx-auto">
                 <h2>Phone</h2>
                <a href="tel:8123007500"><p>+91 8123007500</p></a> 
@@ -194,13 +204,13 @@
             <div class="info-item mx-auto">
                 <h2>Email</h2>
             <a href="mailto:contact@opusnexus.com">
-              <p>contact@opusnexus.com</p>
+              <p>contact@opusnexus.in</p>
             </a>   
             </div>
         </div>
     </div>
     <div class="map-container text-center">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093747!2d144.9537353153186!3d-37.8162797797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577aef5e3c1f6b0!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1597747691769!5m2!1sen!2sau" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3832.826780515187!2d77.53689429103554!3d13.077982721168992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae235af1f8a7ef%3A0x882f1b7ceaff440b!2sSingapura!5e0!3m2!1sen!2sin!4v1716889982624!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
 </div>
 
@@ -258,11 +268,11 @@
           
           <div class="social_container">
             <div>
-              <a href="">
+              <a href="https://www.facebook.com/profile.php?id=61559772765726">
                 <i class="fa-brands fa-facebook"></i>                </a>
             </div>
             <div>
-              <a href="">
+              <a href="https://www.linkedin.com/company/opusnexus/about/?viewAsMember=true">
                 <i class="fa-brands fa-linkedin"></i>                </a>
             </div>
             <div>
@@ -272,7 +282,7 @@
               </a>
             </div>
             <div>
-              <a href="">
+              <a href=" https://wa.me/+918123007500?text=<message>">
                 <i class="fa-brands fa-whatsapp"></i>
 
               </a>
